@@ -1,5 +1,3 @@
-from email.message import Message
-
 import asyncio
 import logging
 import sqlite3
@@ -18,7 +16,7 @@ menu = ReplyKeyboardMarkup(keyboard=[
         [KeyboardButton(text="Посмотреть прогресс"),
         KeyboardButton(text='Стереть прогресс')]
 
-], resize_keyboard=True, one_time_keyboard=False, input_field_placeholder="Выберите язык/перевыберите")
+], resize_keyboard=True, one_time_keyboard=False)
 
 language_choose = InlineKeyboardMarkup(inline_keyboard=[
     [
